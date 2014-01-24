@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="H"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/def_margin"
+        android:layout_marginTop="@dimen/def_margin" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/h_val"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginTop="@dimen/def_margin"
+        android:layout_marginLeft="@dimen/def_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="W"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="@dimen/def_margin"
+        android:layout_marginTop="@dimen/def_margin"
+        android:layout_toRightOf="@+id/h_val" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/w_val"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginTop="@dimen/def_margin"
+        android:layout_marginLeft="@dimen/def_margin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All"
+        android:id="@+id/btn_calc_all"
+        android:layout_toLeftOf="@+id/test_jps"
+        android:layout_toRightOf="@+id/w_val"
+        android:layout_marginTop="@dimen/def_margin"
+        android:layout_marginBottom="@dimen/def_margin" />
+
+    <Button
+        android:text="@string/test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_jps"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/def_margin" />
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/test_jps">
+        <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/logs"/>
+        </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/btn_clear"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/test_jps"
+        android:layout_margin="@dimen/def_margin" />
+
+</RelativeLayout>
